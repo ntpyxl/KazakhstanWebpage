@@ -1,3 +1,156 @@
-.progress-bar {
-    width: 90%;
+body {
+    background-color: #e4fa3c2d;
+}
+
+#welcomeSection { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	position: relative;
+	background: url(https://lp-cms-production.imgix.net/2023-03/kazakhstan-GettyImages-961506872-rfc.jpeg)no-repeat;
+	background-size: cover;
+	background-position: center;
+	min-height: 94vh;
+}
+
+#activitiesBanner { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	position: relative;
+	background: url(https://visitalmaty.kz/wp-content/uploads/2022/01/%D1%82%D1%83%D1%80%D0%B8%D1%81%D1%82%D1%8B-%D0%B2-%D0%B3%D0%BE%D1%80%D0%B0%D1%85-1-scaled.jpg)no-repeat;
+	background-size: cover;
+	background-position: center;
+	min-height: 25vh;
+}
+
+#delicaciesBanner { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	position: relative;
+	background: url(https://www.advantour.com/img/kazakhstan/kazakh-dishes.jpg)no-repeat;
+	background-size: cover;
+	background-position: center;
+	min-height: 25vh;
+}
+
+.bannerText {
+    text-shadow: 4px 4px 6px #000
+}
+
+.card {
+    border-radius: 25px;
+    background-color: #d4fffb81;
+    box-shadow: 2px 2px 12px #00000062;
+    overflow: hidden;
+}
+
+.kazakhstanMap {
+    width: 80%;
+}
+
+.meter-container {
+    width: 100%;
+    height: 40px;
+    border: 4px solid black;
+    border-radius: 25px;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.meter-fill {
+    height: 100%;
+    background-color: #e4fa3c;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    padding-left: 15px;
+}
+
+.meter-text {
+    z-index: 2;
+}
+
+.carousel {
+    width: 100%;
+    max-width: 80vw;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+
+.carousel-item {
+    flex: 0 0 auto;
+    width: 420px;
+    background: #f4f4f4;
+    scroll-snap-align: center;
+    box-shadow:2px 2px 4px rgba(0, 0, 0, 0.3)
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.carousel-item h3 {
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.carousel-item p {
+    color: #3b3b3b;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.carousel::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.carousel::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.carousel::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.carousel::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 767px) {
+    .welcomeText { 
+        font-size: 62px;
+    }
+}
+
+@media (max-width: 600px) {
+    .carousel {
+        flex-direction: column;
+        overflow-x: hidden;
+        overflow-y: auto;
+        height: 90vh;
+    }
+
+    .carousel-item {
+        width: 100%;
+        max-width: 400px;
+        margin: auto;
+    }
+
+    .carousel-item img {
+        height: 120px;
+    }
 }

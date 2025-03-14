@@ -1,11 +1,10 @@
-<!-- activities and culture-->
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Kazakhstan</title>
+        <link rel="icon" type="image/x-icon" href="images/kazakhstan_flag_round.png">
 
         <!-- TAILWIND CSS -->
         <script src="https://cdn.tailwindcss.com"></script>
@@ -13,14 +12,19 @@
         <!-- FLOWBITE NAVBAR -->
         <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
         <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+
+        <!-- FontAwesome CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+        <!-- CUSTOM STYLES -->
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="activity_card_styles.css">  
     </head>
     <body>
         <nav class="bg-white border-gray-200 dark:bg-gray-900">
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-                    
-                    <!-- TODO: CHANGE LOGO -->
-                    <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Kazakhstan Logo" />
+                    <img src="images/kazakhstan_flag_round.png" class="h-8" alt="Kazakhstan Logo" />
                     <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Kazakhstan</span>
                 </a>
                 <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
@@ -49,7 +53,132 @@
                 </div>
             </div>
         </nav>
-    
 
+        <section id="activitiesBanner">
+            <h3 class="text-6xl font-semibold text-center text-white py-5 bannerText">Adventure awaits in Kazakhstan</h3>
+        </section>
+
+        <div class="grid grid-cols-10 md:gap-6 p-3 mx-2 md:mx-24">
+            <section id="culture" class="col-span-10 md:col-span-3">
+                <div class="flex flex-col px-3">
+                    <h3 class="text-4xl font-semibold text-center py-5">CULTURE</h3>
+                    <div class="p-5 mb-12 card">
+                        <h2 class="text-2xl font-bold text-center"><i class="fa-solid fa-tent"></i> Nomadic Heritage & Hospitality</h2>
+                        <p class="text-gray-600 mt-2">
+                            <i class="fa-solid fa-arrow-right"></i> Traditional yurts (portable round tents) symbolize nomadic life, and many Kazakhs still embrace them for celebrations.
+                            <br> <br>
+                            <i class="fa-solid fa-arrow-right"></i> Hospitality is sacred—guests are treated with great respect and offered food, often beshbarmak (boiled meat with pasta) and kumis (fermented mare&apos;s milk).
+                            <br> <br>
+                            <i class="fa-solid fa-arrow-right"></i> The dombra, a two-stringed instrument, plays a key role in storytelling and folk music.
+                        </p>
+                    </div>
+
+                    <div class="p-5 mb-12 card">
+                        <h2 class="text-2xl font-bold text-center"><i class="fa-solid fa-book"></i> Diverse Influences & Modern Identity</h2>
+                            <i class="fa-solid fa-arrow-right"></i> A mix of Islamic, Turkic, and Soviet influences shape the nation&apos;s architecture, customs, and languages.
+                            <br> <br>
+                            <i class="fa-solid fa-arrow-right"></i> While Kazakh and Russian are the official languages, many also speak English in cities.
+                            <br> <br>
+                            <i class="fa-solid fa-arrow-right"></i> Modern Kazakhstan balances deep-rooted traditions with futuristic urban development, seen in cities like Astana (Nur-Sultan).
+                        </p>
+                    </div>
+
+                    <div class="p-5 mb-12 card flex flex-col items-center">
+                        <h2 class="text-2xl font-bold text-center"><i class="fa-solid fa-masks-theater"></i> Festivals & Traditions</h2>
+                        <div class="p-3 w-full">
+                            <p class="text-gray-600 mt-2">
+                                <i class="fa-solid fa-arrow-right"></i> Nauryz (Kazakh New Year) is the biggest festival, celebrated on March 21 with feasts, games, and cultural performances.
+                                <br><br>
+                                <i class="fa-solid fa-arrow-right"></i> Kokpar, a traditional horseback game similar to polo, is a fierce sport where riders compete for a goat carcass.
+                                <br><br>
+                                <i class="fa-solid fa-arrow-right"></i> Eagle hunting remains a revered tradition, passed down through generations in the Altai Mountains.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="activites" class="col-span-10 md:col-span-7">
+                <div class="flex flex-col px-3">
+                    <h3 class="text-4xl font-semibold text-center py-5">ACTIVITIES IN KAZAKHSTAN</h3>
+                    <div class="mx-3 mb-3 card flex flex-col md:flex-row">
+                        <div class="relative w-full md:w-1/3 h-52">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOAbgQ7Rs_fJyyufLTFF7Empw9-yikPhoJlw&s" alt="Berkutchi (eagle hunters) holding an eagle" class="h-full w-full object-cover activity-image-fade-right activity-image-fade-down">
+                        </div>
+                        <div class="w-full md:w-2/3 p-5">
+                            <h2 class="text-2xl font-bold">Experience Traditional Kazakh Eagle Hunting</h2>
+                            <p class="text-gray-600 mt-2">
+                                Visit the Altai or Almaty regions to witness berkutchi (eagle hunters) in action. Learn how the locals train golden eagles for hunting, a centuries-old tradition.
+                            </p>
+                            <button class="mt-6 px-4 py-2 bg-yellow-300 text-dark font-semibold rounded-lg shadow-md hover:bg-yellow-500 transition">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="mx-3 mb-3 card flex flex-col md:flex-row">
+                        <div class="relative w-full md:w-1/3 h-52">
+                            <img src="https://visitsilkroad.org/wp-content/uploads/2021/05/Altyn-Emel-National-Park-featured_image.jpg" alt="Altyn Emel National Park" class="h-full w-full object-cover activity-image-fade-right activity-image-fade-down">
+                        </div>
+                        <div class="w-full md:w-2/3 p-5">
+                            <h2 class="text-2xl font-bold">Stay in a Yurt and Experience Nomadic Culture</h2>
+                            <p class="text-gray-600 mt-2">
+                                Spend a night in a traditional Kazakh yurt in the  Altyn-Emel National Park or Kazakh steppes. Participate in traditional games like kokpar (horseback tug-of-war) or watch folk performances. Enjoy authentic Kazakh cuisine like beshbarmak (meat and pasta dish) and kumis (fermented mare&apos;s milk).
+
+                            </p>
+                            <button class="mt-6 px-4 py-2 bg-yellow-300 text-dark font-semibold rounded-lg shadow-md hover:bg-yellow-500 transition">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="mx-3 mb-3 card flex flex-col md:flex-row">
+                        <div class="relative w-full md:w-1/3 h-52">
+                            <img src="https://static.wixstatic.com/media/43eb5b_d8df28b478b846cd9540b2c30e910140~mv2.jpeg/v1/fill/w_640,h_402,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/43eb5b_d8df28b478b846cd9540b2c30e910140~mv2.jpeg" alt="Almaty Metro" class="h-full w-full object-cover activity-image-fade-right activity-image-fade-down">
+                        </div>
+                        <div class="w-full md:w-2/3 p-5">
+                            <h2 class="text-2xl font-bold">Ride the Soviet-Era Metro in Almaty</h2>
+                            <p class="text-gray-600 mt-2">
+                                The Almaty Metro is one of the most beautifully decorated subway systems in the world. Each station is uniquely designed with intricate mosaics and Kazakh cultural motifs. It&apos;s an affordable and easy way to experience Kazakhstan&apos;s urban culture.
+                            </p>
+                            <button class="mt-6 px-4 py-2 bg-yellow-300 text-dark font-semibold rounded-lg shadow-md hover:bg-yellow-500 transition">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="mx-3 mb-3 card flex flex-col md:flex-row">
+                        <div class="relative w-full md:w-1/3 h-52">
+                            <img src="https://1baikal.ru/assets/components/phpthumbof/cache/124274f87b5c52f9492306b7f778888f.6e5b9d2e3b1c233fdd869bc733c844fd.jpg" alt="Lake Balkhash" class="h-full w-full object-cover activity-image-fade-right activity-image-fade-down">
+                        </div>
+                        <div class="w-full md:w-2/3 p-5">
+                            <h2 class="text-2xl font-bold">Try Ice Fishing on Lake Balkhash</h2>
+                            <p class="text-gray-600 mt-2">
+                                During winter, Lake Balkhash freezes over, making it a prime spot for ice fishing. Join local fishermen and catch species like pike, perch, and catfish. Experience traditional ice-fishing techniques and warm up with local cuisine.
+                            </p>
+                            <button class="mt-6 px-4 py-2 bg-yellow-300 text-dark font-semibold rounded-lg shadow-md hover:bg-yellow-500 transition">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="mx-3 mb-3 card flex flex-col md:flex-row">
+                        <div class="relative w-full md:w-1/3 h-52">
+                            <img src="https://res.cloudinary.com/odysseytraveller/image/fetch/f_auto,q_auto,dpr_auto,r_4,w_1520,h_700,c_fill/https://cdn.odysseytraveller.com/app/uploads/2020/03/GettyImages-878961280.jpg" alt="Kazakh Steppe" class="h-full w-full object-cover activity-image-fade-right activity-image-fade-down">
+                        </div>
+                        <div class="w-full md:w-2/3 p-5">
+                            <h2 class="text-2xl font-bold mt-3 md:mt-0">Go Horseback Riding in the Kazakh Steppe</h2>
+                            <p class="text-gray-600 mt-2">
+                                Ride through the endless steppes and valleys of Kazakhstan like a true nomad. Popular regions for horseback riding include Borovoe (Burabay) and the Tien Shan foothills. Multi-day horseback expeditions are available for adventure travelers.
+                            </p>
+                            <button class="mt-6 px-4 py-2 bg-yellow-300 text-dark font-semibold rounded-lg shadow-md hover:bg-yellow-500 transition">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+        </div>
     </body>
 </html>
